@@ -31,7 +31,7 @@ li {
 
 a {
     text-decoration: none;
-    color: #388E3C; /* Green */
+    color: #406063; /* Teal */
 }
 
 a:hover {
@@ -40,7 +40,7 @@ a:hover {
 
 /* Header Styles */
 header {
-    background-color: #388E3C; /* Green */
+    background-color: #406063; /* Teal */
     color: white;
     padding: 10px 20px;
     display: flex;
@@ -77,7 +77,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #FFC43F; /* Yellow */
+    color: #6FB9AD; /* Aqua */
 }
 
 /* Main Section */
@@ -94,7 +94,7 @@ section {
 
 section h2 {
     font-size: 2rem;
-    color: #388E3C; /* Green */
+    color: #6FB9AD; /* Aqua */
 }
 
 section p {
@@ -133,7 +133,7 @@ footer .social-icons img {
 }
 
 footer a {
-    color: #FFC43F; /* Yellow */
+    color: #406063; /* Teal */
     text-decoration: none;
 }
 
