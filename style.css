@@ -61,7 +61,7 @@ nav h1 {
 
 nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 0;
     margin: 0;
 }
