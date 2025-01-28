@@ -172,3 +172,21 @@ footer a:hover {
         cursor: pointer;
     }
 }
+/* Laptop/Desktop styles */
+@media (min-width: 769px) {
+    nav {
+        flex-direction: row; /* Ensure logo and nav links are in a row */
+        justify-content: space-between; /* Space out logo and nav links */
+        align-items: center; /* Vertically center items */
+    }
+
+    .nav-links {
+        display: flex; /* Ensure nav links are visible */
+        flex-direction: row; /* Align links horizontally */
+        gap: 1.5rem; /* Add spacing between links */
+    }
+
+    .menu-toggle {
+        display: none; /* Hide the toggle button on larger screens */
+    }
+}
