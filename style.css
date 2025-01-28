@@ -131,182 +131,24 @@ footer a:hover {
 /* Responsive Design */
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row; /* Keep the logo and menu toggle in a row */
+        align-items: center;
         padding: 1rem;
     }
 
-    nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-        margin-top: 1rem;
+    .logo {
+        order: 1; /* Ensure logo stays on the left */
     }
 
-    main {
-        padding: 0 1rem;
-    }
-
-    section {
-        padding: 1.5rem;
-    }
-}
-/* Mobile Styles */
-@media (max-width: 768px) {
-    /* Header and Navigation */
-    header {
-        padding: 0.5rem 0;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0 1rem;
-    }
-
-    .logo img {
-        width: 50px;
-        height: 50px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-        margin-top: 1rem;
-    }
-
-    nav ul h1 {
-        font-size: 1.5rem; /* Reduce the size of the heading */
-    }
-
-    nav ul li {
-        margin: 0;
-    }
-
-    /* Main Content */
-    main {
-        padding: 0 1rem;
-    }
-
-    section {
-        padding: 1.5rem;
-        margin-bottom: 2rem;
-    }
-
-    section h2 {
-        font-size: 1.75rem; /* Adjust heading size for mobile */
-    }
-
-    section p {
-        font-size: 1rem; /* Adjust paragraph size for mobile */
-    }
-
-    section ul {
-        margin-left: 1.5rem;
-    }
-
-    /* Footer */
-    footer {
-        padding: 1rem 0;
-    }
-
-    footer .social-links {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    footer p {
-        font-size: 0.9rem;
-    }
-}
-/* Hamburger Menu Styles */
-.menu-toggle {
-    display: none; /* Hide by default */
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.nav-links {
-    display: flex;
-    gap: 1.5rem;
-}
-
-@media (max-width: 768px) {
     .menu-toggle {
-        display: block; /* Show on mobile */
+        order: 2; /* Ensure menu toggle stays on the right */
     }
 
     .nav-links {
-        display: none; /* Hide menu by default on mobile */
+        display: none; /* Hide the nav links by default */
         flex-direction: column;
         width: 100%;
-    }
-
-    .nav-links.active {
-        display: flex; /* Show menu when active */
-    }
-}
-/* Ensure the header and nav are properly aligned */
-header {
-    width: 100%;
-    padding: 10px 20px;
-    box-sizing: border-box;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Logo styling */
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-/* Menu toggle button styling */
-.menu-toggle {
-    display: none; /* Hide by default */
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 10px;
-}
-
-/* Nav links styling */
-.nav-links {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li {
-    margin-left: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #000;
-    font-size: 16px;
-}
-
-/* Mobile view adjustments */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Show the toggle button in mobile view */
-        order: 2; /* Move the toggle button to the right */
-    }
-
-    .nav-links {
-        display: none; /* Hide the nav links by default in mobile view */
-        flex-direction: column;
-        width: 100%;
-        background: #f8f8f8;
+        background: #2c3e50;
         position: absolute;
         top: 70px; /* Adjust based on header height */
         left: 0;
@@ -319,5 +161,14 @@ nav {
     .nav-links li {
         margin: 10px 0;
         text-align: center;
+    }
+
+    .menu-toggle {
+        display: block; /* Show the toggle button in mobile view */
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
     }
 }
