@@ -248,3 +248,76 @@ footer a:hover {
         display: flex; /* Show menu when active */
     }
 }
+/* Ensure the header and nav are properly aligned */
+header {
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Menu toggle button styling */
+.menu-toggle {
+    display: none; /* Hide by default */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Nav links styling */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show the toggle button in mobile view */
+        order: 2; /* Move the toggle button to the right */
+    }
+
+    .nav-links {
+        display: none; /* Hide the nav links by default in mobile view */
+        flex-direction: column;
+        width: 100%;
+        background: #f8f8f8;
+        position: absolute;
+        top: 70px; /* Adjust based on header height */
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show the nav links when active */
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
