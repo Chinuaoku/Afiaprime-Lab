@@ -18,8 +18,10 @@
                 <img class="logo" src="afiaprimelab.png" alt="Afiaprime Lab Logo" style="width: 70px; height: 70px;">
 
             </div>
-            
-            <ul>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul> class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#mission">Mission</a></li>
                 <li><a href="#vision">Vision</a></li>
@@ -89,5 +91,13 @@
         </div>
         <p>&copy; 2025 Afiaprime Lab. All rights reserved. | <a href="mailto:hello@afiaprimelab.site">hello@afiaprimelab.site</a></p>
     </footer>
+    <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
 </body>
 </html>
