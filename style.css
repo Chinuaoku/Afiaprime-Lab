@@ -172,6 +172,7 @@ footer a:hover {
         cursor: pointer;
     }
 }
+
 /* Laptop/Desktop styles */
 @media (min-width: 769px) {
     nav {
