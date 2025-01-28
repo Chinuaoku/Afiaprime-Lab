@@ -218,3 +218,33 @@ footer a:hover {
         font-size: 0.9rem;
     }
 }
+/* Hamburger Menu Styles */
+.menu-toggle {
+    display: none; /* Hide by default */
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show on mobile */
+    }
+
+    .nav-links {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show menu when active */
+    }
+}
