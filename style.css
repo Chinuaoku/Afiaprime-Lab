@@ -121,8 +121,8 @@ section ul li {
 
 /* Footer */
 footer {
-    background-color: #e6f7ff; /* Very light blue background for contact form section */
-    color: #2c3e50; /* Dark blue */
+    background-color: #2c3e50; /* Dark blue */ 
+    color: #e6f7ff; /* Very light blue background for contact form section */
     text-align: center;
     padding: 2rem 0;
     margin-top: 3rem;
