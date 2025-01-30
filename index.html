@@ -5,101 +5,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Afiaprime Lab is a non-profit organization based in Lagos, Nigeria, dedicated to empowering young Africans through tech education.">
     <title>Afiaprime Lab - About Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baufra&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <img class="logo" src="afiaprimelab.png" alt="Afiaprime Lab Logo" style="width: 70px; height: 70px;">
-
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="afiaprimelab.png" alt="Afiaprime Lab Logo" style="width: 70px; height: 70px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#vision">Vision</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#approach">Our Approach</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#get-involved">Get Involved</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <button class="menu-toggle" aria-label="Toggle menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#mission">Mission</a></li>
-                <li><a href="#vision">Vision</a></li>
-                <li><a href="#approach">Our Approach</a></li>
-                <li><a href="#get-involved">Get Involved</a></li>
-            </ul>
         </nav>
     </header>
-
     <main>
-        <section id="about">
-            <h2>About Afiaprime Lab</h2>
-            <p>Afiaprime Lab is a non-profit organization based in Lagos, Nigeria, dedicated to empowering the next generation of tech leaders across Africa. Our mission is to train 10,000 young people in the fields of cybersecurity, data analysis, and software development over the next decade. As a hub of innovation and skill development, we are passionate about fostering hands-on learning experiences for young individuals starting from scratch in the world of technology.</p>
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2>About Afiaprime Lab</h2>
+                <p>Afiaprime Lab is a non-profit organization based in Lagos, Nigeria, dedicated to empowering the next generation of tech leaders across Africa. Our mission is to train 10,000 young people in the fields of cybersecurity, data analysis, and software development over the next decade. As a hub of innovation and skill development, we are passionate about fostering hands-on learning experiences for young individuals starting from scratch in the world of technology.</p>
+            </div>
         </section>
-
-        <section id="vision">
-            <h2>Our Vision</h2>
-            <p>We envision Afiaprime Lab becoming one of the largest and most impactful tech hubs in Africa. We aim to create a thriving ecosystem where young Africans, particularly those from underserved communities, can learn, grow, and thrive in the digital world. By providing the resources and support needed to develop technical skills, we strive to empower individuals to shape the future of the continent and contribute to its growing digital economy.</p>
+        <section id="vision" class="py-5">
+            <div class="container">
+                <h2>Our Vision</h2>
+                <p>We envision Afiaprime Lab becoming one of the largest and most impactful tech hubs in Africa. We aim to create a thriving ecosystem where young Africans, particularly those from underserved communities, can learn, grow, and thrive in the digital world. By providing the resources and support needed to develop technical skills, we strive to empower individuals to shape the future of the continent and contribute to its growing digital economy.</p>
+            </div>
         </section>
-
-        <section id="mission">
-            <h2>Our Mission</h2>
-            <p>At Afiaprime Lab, our mission is simple but bold: to provide comprehensive training and mentorship to 10,000 young people over the next 10 years. We are committed to providing the tools and knowledge necessary for these individuals to succeed in the fields of cybersecurity, data analysis, and software development. Through a combination of structured training programs, real-world projects, and mentorship, we aim to equip learners with the practical skills needed to excel in today's rapidly evolving digital landscape.</p>
+        <section id="mission" class="py-5">
+            <div class="container">
+                <h2>Our Mission</h2>
+                <p>At Afiaprime Lab, our mission is simple but bold: to provide comprehensive training and mentorship to 10,000 young people over the next 10 years. We are committed to providing the tools and knowledge necessary for these individuals to succeed in the fields of cybersecurity, data analysis, and software development. Through a combination of structured training programs, real-world projects, and mentorship, we aim to equip learners with the practical skills needed to excel in today's rapidly evolving digital landscape.</p>
+            </div>
         </section>
-
-        <section id="approach">
-            <h2>Our Approach</h2>
-            <p>We believe that access to quality education and resources should not be limited by location or financial circumstance. Afiaprime Lab offers a unique, inclusive approach to learning that focuses on the following:</p>
-            <ul>
-                <li><strong>Accessible Education:</strong> We provide free and subsidized training programs designed for beginners, ensuring that anyone, regardless of their background, can embark on a tech career. Our curriculum is hands-on and designed to give learners practical experience that prepares them for real-world challenges.</li>
-                <li><strong>Support for Innovation:</strong> We understand that talent is not limited to the classroom. That’s why we offer resources such as laptops, mentorship, and seed funding to help highly innovative learners turn their ideas into viable tech products. We aim to bridge the gap between education and entrepreneurship by helping these young minds launch their own projects and businesses.</li>
-                <li><strong>Job Readiness and Opportunities:</strong> Our connections with tech industry leaders and employers allow us to link learners with job opportunities, internships, and freelance work. We provide career guidance and practical experience through collaborations with tech companies and startups, enabling learners to gain hands-on experience that makes them job-ready.</li>
-                <li><strong>Community and Collaboration:</strong> We foster a vibrant, supportive community where learners can collaborate, network, and share knowledge. We believe in the power of mentorship, peer learning, and collaboration to drive innovation and success.</li>
-                <li><strong>Sustainability:</strong> We are committed to ensuring the long-term success of our programs by maintaining a sustainable model supported by donations, partnerships, and collaborations. We accept all forms of donations, including funding, technology, and mentorship, to help support the continued growth of Afiaprime Lab and its learners.</li>
-            </ul>
+        <section id="approach" class="py-5">
+            <div class="container">
+                <h2>Our Approach</h2>
+                <p>We believe that access to quality education and resources should not be limited by location or financial circumstance. Afiaprime Lab offers a unique, inclusive approach to learning that focuses on the following:</p>
+                <ul>
+                    <li><strong>Accessible Education:</strong> We provide free and subsidized training programs designed for beginners, ensuring that anyone, regardless of their background, can embark on a tech career. Our curriculum is hands-on and designed to give learners practical experience that prepares them for real-world challenges.</li>
+                    <li><strong>Support for Innovation:</strong> We understand that talent is not limited to the classroom. That’s why we offer resources such as laptops, mentorship, and seed funding to help highly innovative learners turn their ideas into viable tech products. We aim to bridge the gap between education and entrepreneurship by helping these young minds launch their own projects and businesses.</li>
+                    <li><strong>Job Readiness and Opportunities:</strong> Our connections with tech industry leaders and employers allow us to link learners with job opportunities, internships, and freelance work. We provide career guidance and practical experience through collaborations with tech companies and startups, enabling learners to gain hands-on experience that makes them job-ready.</li>
+                    <li><strong>Community and Collaboration:</strong> We foster a vibrant, supportive community where learners can collaborate, network, and share knowledge. We believe in the power of mentorship, peer learning, and collaboration to drive innovation and success.</li>
+                    <li><strong>Sustainability:</strong> We are committed to ensuring the long-term success of our programs by maintaining a sustainable model supported by donations, partnerships, and collaborations. We accept all forms of donations, including funding, technology, and mentorship, to help support the continued growth of Afiaprime Lab and its learners.</li>
+                </ul>
+            </div>
         </section>
-
-        <section id="get-involved">
-            <h2>Why We Need Your Support</h2>
-            <p>As we work toward our goal of training 10,000 young Africans, we rely on the generosity of donors, partners, and volunteers. Every contribution, whether financial or in-kind, plays a critical role in enabling us to provide free training programs, essential learning tools, and career opportunities to our learners. Your support can make a tangible difference in the lives of young people who are eager to build a future in technology but lack the resources to get started.</p>
-            <p>We accept all types of donations to help support young learners in digital technology. Whether you're donating laptops, offering mentorship, or providing financial support, your contribution helps us make a lasting impact.</p>
+        <section id="get-involved" class="py-5">
+            <div class="container">
+                <h2>Why We Need Your Support</h2>
+                <p>As we work toward our goal of training 10,000 young Africans, we rely on the generosity of donors, partners, and volunteers. Every contribution, whether financial or in-kind, plays a critical role in enabling us to provide free training programs, essential learning tools, and career opportunities to our learners. Your support can make a tangible difference in the lives of young people who are eager to build a future in technology but lack the resources to get started.</p>
+                <p>We accept all types of donations to help support young learners in digital technology. Whether you're donating laptops, offering mentorship, or providing financial support, your contribution helps us make a lasting impact.</p>
+            </div>
         </section>
-
-        <section id="contact">
-            <h2>Get Involved</h2>
-            <p>Afiaprime Lab is not just a place for learning – it’s a movement. Join us in shaping the future of Africa’s tech ecosystem. Together, we can help thousands of young Africans find their path, achieve their dreams, and become the tech innovators of tomorrow.</p>
-            <p>If you're interested in learning more about Afiaprime Lab or how you can get involved, please reach out to us. Whether you want to donate, volunteer, or partner with us, we’d love to hear from you and work together to support Africa’s future tech leaders.</p>
+        <section id="contact-form-section" class="py-5">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contact-form" action="https://formspree.io/f/your-email-here" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
-
-    <footer>
-        <div class="social-links">
-            <a href="https://www.linkedin.com" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-                
-            </a>
-            
-            <a href="https://www.x.com/@afiaprimelab" target="_blank">
-                <i class="fa-brands fa-square-x-twitter"></i>
-            </a>
-            
-            <a href="https://www.x.com/@afiaprimelab" target="_blank">
-            <i class="fab fa-x-twitter"></i> <!-- New X icon -->
-            <!-- Fallback for older Font Awesome versions -->
-            <i class="fab fa-twitter"></i>
-        </a>
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Afiaprime Lab</h5>
+                    <p>Empowering young Africans through tech education.</p>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Follow Us</h5>
+                    <div class="social-links d-flex justify-content-center justify-content-lg-start">
+                        <a href="https://www.linkedin.com" target="_blank" class="me-3">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.x.com/@afiaprimelab" target="_blank" class="me-3">
+                            <i class="fab fa-square-x-twitter"></i>
+                        </a>
+                        <a href="https://www.x.com/@afiaprimelab" target="_blank">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p>&copy; 2025 Afiaprime Lab. All rights reserved. | <a href="mailto:hello@afiaprimelab.site">hello@afiaprimelab.site</a></p>
+        <div class="text-center p-3">
+            &copy; 2025 Afiaprime Lab. All rights reserved. | 
+            <a href="mailto:hello@afiaprimelab.site" class="text-dark">hello@afiaprimelab.site</a>
+        </div>
     </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-secondary position-fixed bottom-0 end-0 m-4">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
+    // Toggle mobile navigation menu
+    document.addEventListener('DOMContentLoaded', function () {
+        var menuToggle = document.querySelector('.navbar-toggler');
+        var navLinks = document.querySelector('.navbar-collapse');
 
-    menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
+        menuToggle.addEventListener('click', function () {
+            navLinks.classList.toggle('show');
+        });
     });
-</script>
 
-    
+    // Scroll to top button functionality
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
