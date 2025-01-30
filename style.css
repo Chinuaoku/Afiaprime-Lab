@@ -39,14 +39,14 @@ nav {
 }
 
 .navbar-nav .nav-item .nav-link {
-    color: #fff !important;
+    color: #1abc9c !important; /* Green color before hover */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: #1abc9c !important; /* Teal green on hover */
+    color: #2c3e50 !important; /* Dark blue on hover */
 }
 
 /* Main Content */
@@ -130,7 +130,7 @@ footer {
 footer .social-links a {
     margin: 0 0.5rem;
     font-size: 1.5rem;
-    color: #fff;
+    color: #1abc9c; /* Green color before hover */
     transition: opacity 0.3s ease;
 }
 
@@ -144,7 +144,7 @@ footer p {
 }
 
 footer a {
-    color: #1abc9c; /* Teal green */
+    color: #1abc9c; /* Green color before hover */
     text-decoration: none;
 }
 
