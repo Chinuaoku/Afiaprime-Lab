@@ -21,6 +21,7 @@ header {
     color: #fff;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: none; /* Remove the blue bar under the header */
 }
 
 nav {
@@ -141,6 +142,7 @@ footer .social-links a:hover {
 footer p {
     margin: 0;
     font-size: 0.9rem;
+    color: #d1d1d1; /* Lighter color for better contrast */
 }
 
 footer a {
@@ -225,4 +227,9 @@ footer a:hover {
         flex-direction: row;
         gap: 1.5rem;
     }
+}
+
+/* Fix for mobile menu toggle */
+.navbar-toggler:focus {
+    box-shadow: none;
 }
