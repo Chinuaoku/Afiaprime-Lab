@@ -121,8 +121,8 @@ section ul li {
 
 /* Footer */
 footer {
-    background-color: #2c3e50; /* Dark blue */ 
-    color: #e6f7ff; /* Very light blue background for contact form section */
+    background-color: #555; /* Dark blue */ 
+    color: #555; /* Very light blue background for contact form section */
     text-align: center;
     padding: 2rem 0;
     margin-top: 3rem;
@@ -142,7 +142,7 @@ footer .social-links a:hover {
 footer p {
     margin: 0;
     font-size: 0.9rem;
-    color: #e6f7ff; /* Lighter color for better contrast */
+    color: #d1d1d1; /* Lighter color for better contrast */
 }
 
 footer a {
