@@ -131,7 +131,7 @@ footer {
 footer .social-links a {
     margin: 0 0.5rem;
     font-size: 1.5rem;
-    color: #1abc9c; /* Green color before hover */
+    color: #f98513; /* Orange color before hover */
     transition: opacity 0.3s ease;
 }
 
