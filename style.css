@@ -13,12 +13,12 @@ body {
 }
 
 /* Header and Navigation */
-header {
+/*header {
     position: fixed;
     width: 100%;
     z-index: 1000;
     background-color: #ffffff; /* White */
-    color: #fff;
+    /*color: #fff;
     padding: 1rem 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-bottom: none; /* Remove the blue bar under the header */
