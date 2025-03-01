@@ -40,14 +40,14 @@ nav {
 }
 
 .navbar-nav .nav-item .nav-link {
-    color: #f98513 !important; /* Green color before hover */
+    color: #f98513 !important; /* Orange */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: #2c3e50 !important; /* Dark blue on hover */
+    color: #006bb3 !important; /* Blue */
 }
 
 /* Main Content */
@@ -60,7 +60,7 @@ main {
 section {
     margin-bottom: 3rem;
     padding: 2rem;
-    background-color: #e6f7ff; /* Very light blue background for each section */
+    background-color: #DAD1C8; /* Jodhpur Tan Ash */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -107,7 +107,7 @@ section ul li {
 
 #contact-form button {
     padding: 0.75rem 1.5rem;
-    background-color: #006bb3; /* Dark blue */
+    background-color: #006bb3; /* blue */
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -116,7 +116,7 @@ section ul li {
 }
 
 #contact-form button:hover {
-    background-color: #f98513; /* Teal green on hover */
+    background-color: #f98513; /* Orange */
 }
 
 /* Footer */
