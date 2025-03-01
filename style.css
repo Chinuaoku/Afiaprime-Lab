@@ -192,7 +192,6 @@ footer a:hover {
     }
 
     .navbar-collapse {
-        display: block;
         width: 100%;
         background-color: #006bb3; /* Dark blue */
     }
