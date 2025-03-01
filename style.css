@@ -60,7 +60,7 @@ main {
 section {
     margin-bottom: 3rem;
     padding: 2rem;
-    background-color: #DAD1C8; /* Jodhpur Tan Ash */
+    background-color: #F4F1EC; /* Luster White */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -87,7 +87,7 @@ section ul li {
 
 /* Contact Form Section */
 #contact-form-section {
-    background-color: #e6f7ff; /* Very light blue background for contact form section */
+    background-color: #F4F1EC; /* Luster White */
     padding: 3rem 2rem;
 }
 
