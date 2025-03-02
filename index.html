@@ -132,11 +132,15 @@
     <script>
     // Toggle mobile navigation menu
     document.addEventListener('DOMContentLoaded', function () {
-        var menuToggle = document.querySelector('.navbar-toggler');
-        var navLinks = document.querySelector('.navbar-collapse');
+    var menuToggle = document.querySelector('.navbar-toggler');
+    var navLinks = document.querySelector('.navbar-collapse');
 
-        menuToggle.addEventListener('click', function () {
-            navLinks.classList.toggle('show');
+    menuToggle.addEventListener('click', function () {
+        if (navLinks.classList.contains('show')) {
+            navLinks.classList.remove('show');
+        } else {
+            navLinks.classList.add('show');
+        }
         });
     });
 
