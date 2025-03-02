@@ -176,14 +176,25 @@ document.addEventListener('DOMContentLoaded', function () {
     
     <script>
       window.onload = function() {
+          if (!emailjs) {
+              console.error("EmailJS SDK not loaded!");
+              return;
+          }
         emailjs.init("rRlS8GstynC17Z2At");
+        console.log("EmailJS initialized!");
+          
         document.getElementById('contact-form').addEventListener('submit', function(event) {
           event.preventDefault();
+            console.log("Form submitted, sending email...");
+
+            var form = this;
+            
           emailjs.sendForm('service_kp6gm3q', 'template_ugbj8bk', this)
             .then(function() {
               alert('Message sent successfully!');
                 console.log("Email Sent Successfully!");
                 this.reset();
+                
             }, function(error) {
               console.log('FAILED...', error);
             });
