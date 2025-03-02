@@ -131,9 +131,10 @@
 
     <script>
     // Toggle mobile navigation menu
-    document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     var menuToggle = document.querySelector('.navbar-toggler');
     var navLinks = document.querySelector('.navbar-collapse');
+    var menuItems = document.querySelectorAll('.navbar-nav .nav-link'); // Select all menu links
 
     menuToggle.addEventListener('click', function (event) {
         event.stopPropagation(); // Prevent event from bubbling up
@@ -145,9 +146,15 @@
         if (!navLinks.contains(event.target) && !menuToggle.contains(event.target)) {
             navLinks.classList.remove('show');
         }
-        });
     });
 
+    // Close the menu when a menu item is clicked
+    menuItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+            navLinks.classList.remove('show');
+        });
+    });
+});
     // Scroll to top button functionality
     window.onscroll = function() {scrollFunction()};
 
