@@ -187,13 +187,13 @@ document.addEventListener('DOMContentLoaded', function () {
           event.preventDefault();
             console.log("Form submitted, sending email...");
 
-            var form = this;
+            const form = document.getElementById('contact-form');
             
-          emailjs.sendForm('service_kp6gm3q', 'template_ugbj8bk', this)
+          emailjs.sendForm('service_kp6gm3q', 'template_ugbj8bk', form)
             .then(function() {
               alert('Message sent successfully!');
                 console.log("Email Sent Successfully!");
-                this.reset();
+                form.reset();
                 
             }, function(error) {
               console.log('FAILED...', error);
