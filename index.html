@@ -135,11 +135,15 @@
     var menuToggle = document.querySelector('.navbar-toggler');
     var navLinks = document.querySelector('.navbar-collapse');
 
-    menuToggle.addEventListener('click', function () {
-        if (navLinks.classList.contains('show')) {
+    menuToggle.addEventListener('click', function (event) {
+        event.stopPropagation(); // Prevent event from bubbling up
+        navLinks.classList.toggle('show');
+    });
+
+    // Close the menu when clicking anywhere outside
+    document.addEventListener('click', function (event) {
+        if (!navLinks.contains(event.target) && !menuToggle.contains(event.target)) {
             navLinks.classList.remove('show');
-        } else {
-            navLinks.classList.add('show');
         }
         });
     });
